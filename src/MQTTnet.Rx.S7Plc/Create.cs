@@ -15,7 +15,7 @@ namespace MQTTnet.Rx.S7Plc
     public static class Create
     {
         /// <summary>
-        /// Publishes the serial port.
+        /// Publishes the s7 PLC tag.
         /// </summary>
         /// <typeparam name="T">The PLC Tag Data Type.</typeparam>
         /// <param name="client">The client.</param>
@@ -51,7 +51,7 @@ namespace MQTTnet.Rx.S7Plc
                 throw new ArgumentNullException(nameof(s7plc));
             }
 
-            return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad!.ToString())));
+            return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad: payLoad!.ToString()!)));
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace MQTTnet.Rx.S7Plc
                 throw new ArgumentNullException(nameof(s7plc));
             }
 
-            return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad!.ToString())));
+            return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad: payLoad!.ToString()!)));
         }
     }
 }
