@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MQTTnet.Rx.Client" Version="0.7.0" />
+    <PackageReference Include="MQTTnet.Rx.Client" Version="0.8.0" />
     <PackageReference Include="S7PlcRx" Version="1.0.2" />
   </ItemGroup>
 
