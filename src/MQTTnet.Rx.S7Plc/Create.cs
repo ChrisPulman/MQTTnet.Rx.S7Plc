@@ -48,7 +48,9 @@ namespace MQTTnet.Rx.S7Plc
             configurePlc(s7plc);
             if (s7plc == null)
             {
+#pragma warning disable CA2208 // Instantiate argument exceptions correctly
                 throw new ArgumentNullException(nameof(s7plc));
+#pragma warning restore CA2208 // Instantiate argument exceptions correctly
             }
 
             return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad: payLoad!.ToString()!)));
@@ -86,7 +88,9 @@ namespace MQTTnet.Rx.S7Plc
             configurePlc(s7plc);
             if (s7plc == null)
             {
+#pragma warning disable CA2208 // Instantiate argument exceptions correctly
                 throw new ArgumentNullException(nameof(s7plc));
+#pragma warning restore CA2208 // Instantiate argument exceptions correctly
             }
 
             return client.PublishMessage(s7plc.Observe<T>(plcVariable).Select(payLoad => (topic, payLoad: payLoad!.ToString()!)));
