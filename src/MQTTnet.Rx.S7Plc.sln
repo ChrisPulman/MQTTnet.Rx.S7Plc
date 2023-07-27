@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionConfig", "SolutionC
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
 		..\.gitignore = ..\.gitignore
-		..\.github\workflows\BuildOnly.yml = ..\.github\workflows\BuildOnly.yml
 		..\.github\dependabot.yml = ..\.github\dependabot.yml
 		..\Directory.Build.props = ..\Directory.Build.props
-		..\.github\workflows\dotnet.yml = ..\.github\workflows\dotnet.yml
 		..\LICENSE = ..\LICENSE
 		..\README.md = ..\README.md
 		..\stylecop.json = ..\stylecop.json
 		..\Version.json = ..\Version.json
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "..\build\_build.csproj", "{11DD9BCF-D2F0-46BD-A650-2BFCC015928E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +29,8 @@ Global
 		{C040CAD8-8D44-4FAE-8B04-FAD13AF70A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C040CAD8-8D44-4FAE-8B04-FAD13AF70A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C040CAD8-8D44-4FAE-8B04-FAD13AF70A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11DD9BCF-D2F0-46BD-A650-2BFCC015928E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DD9BCF-D2F0-46BD-A650-2BFCC015928E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
